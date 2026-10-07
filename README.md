@@ -1,4 +1,4 @@
-# 富士食譜工具與拍立得工作室
+# 富士食譜工具與拍立得小房間
 
 把富士相機食譜做成可瀏覽、可收藏的小工具，並附一套本機即可使用的拍立得風格邊框工作室。  
 兩個入口互相連通，不必安裝、不必建置，用瀏覽器直接開 HTML 就能用。
@@ -6,7 +6,7 @@
 | 入口 | 檔案 | 用途 |
 | --- | --- | --- |
 | 富士食譜工具 | `index.html` | 瀏覽、搜尋、收藏相機食譜 |
-| 拍立得工作室（拍立得小房間） | `polaroid.html` | 匯入照片、套邊框、寫相機資訊、單張／批次輸出 |
+| 拍立得小房間 | `polaroid.html` | 匯入照片、套邊框、寫相機資訊、單張／批次輸出 |
 
 線上示範（若已部署 GitHub Pages）：
 
@@ -33,7 +33,7 @@ npx --yes serve .
 
 ---
 
-## 拍立得工作室
+## 拍立得小房間
 
 `polaroid.html` 即獨立專案〈拍立得小房間〉（[EnWeiLo/polaroid-tool](https://github.com/EnWeiLo/polaroid-tool)）的 `index.html`，在這裡改名為 `polaroid.html`，頂部另加一顆「富士食譜工具」返回連結。
 
@@ -69,7 +69,7 @@ npx --yes serve .
 - 辰宇落雁（`ChenYuluoyan-2.0-Thin.ttf`）
 - 源流明體（`GenRyuMin2TW-*.otf`）
 
-其餘字體走 Google Fonts，**需要網路**。`fonts/` 內另有 `-EL`、`-L`、`-R` 字重，目前拍立得工作室未使用，保留給舊版備份／日後使用。
+其餘字體走 Google Fonts，**需要網路**。`fonts/` 內另有 `-EL`、`-L`、`-R` 字重，目前拍立得小房間未使用，保留給舊版備份／日後使用。
 
 ### 機型圖示
 
@@ -91,7 +91,7 @@ Z5 II、Z6、X-T50 的向量圖示已內嵌在 `polaroid.html`，避免 `file://
 ```
 .
 ├── index.html              食譜工具
-├── polaroid.html           拍立得工作室（拍立得小房間）
+├── polaroid.html           拍立得小房間
 ├── manifest.webmanifest
 ├── sw.js                   僅清理舊快取，不攔截請求
 ├── icon-192.png
@@ -159,4 +159,4 @@ node qa/verify-exports.cjs
 - 建議用較新的 Chromium / Edge / Safari；Canvas 匯出與字型載入在舊瀏覽器可能有差。
 - 批次匯出張數多、解析度高時，記憶體用量會明顯上升，建議分批處理。
 - 非 JPEG、或被社群 App 洗掉 EXIF 的圖，自動帶入資料會不完整，可改手動輸入。
-- 本 README 的拍立得工作室段落對應 2026-10 替換為〈拍立得小房間〉之後的狀態；食譜工具與其餘段落沿用 2026-09-10 快照。
+- 本 README 的拍立得小房間段落對應 2026-10 替換為〈拍立得小房間〉之後的狀態；食譜工具與其餘段落沿用 2026-09-10 快照。
